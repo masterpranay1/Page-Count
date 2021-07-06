@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --font-family : 'Poppins', sans-serif;
+    --clr-bg : linear-gradient(135deg, #FFCF1B, #FF8B1B);
+    --clr-pri : #ffd51b;
+    --clr-sec : black;
+    --clr-ter : white;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 2em;
+
+    background: var(--clr-bg);
+
+    font-family: var(--font-family);
+}
+
+header {
+    background: var(--clr-ter);
+    height: fit-content;
+    padding: 0.5em 3em;
+
+    display: flex;
+    color: var(--clr-pri);
+}
+
+header i {
+    font-size: 1.5em;
+
+    align-self: center;
+    margin-right: 0.3em;
+}
+header h1 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+
+    width: fit-content;
+    /* background: pink; */
+}
+.date {
+    background: var(--clr-ter);
+    color: var(--clr-pri);
+
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+.next, .prev {
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    font-size: 1em;
+    background: var(--clr-ter);
+    color: var(--clr-pri);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.userContainer {  
+    /* width: fit-content; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.user {
+    background: white;
+    width: 20em;
+    margin: 1em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1.5fr 1fr;
+
+    grid-template-areas: 
+    "name name name"
+    "plus count minus"
+    "winner winner winner";
+    border-radius: 10px;
+    box-shadow: 13px 11px 20px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width : 425px) {
+    .user {
+        width: 14em;
+    }
+    .date {
+        font-size: 1.2em;
+    } 
+    .prev, .next {
+        font-size: 0.85em;
+    }
+}
+@media (max-width : 768px) {
+    .dateContainer {
+        margin: 1em auto;
+    }
+}
+.user h2 {
+    grid-area: name;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+}
+.user p {
+    grid-area: count;
+    font-size: 4em;
+    color: var(--clr-pri);
+    text-align: center;
+}
+.user i.fa-plus-circle {
+    grid-area: plus;
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--clr-pri);
+    cursor: pointer;
+}
+.user i.fa-minus-circle {
+    grid-area: minus;
+    font-size: 1.5em;
+    color: var(--clr-pri);
+    text-align: center;
+    cursor: pointer;
+}
+.user div {
+    grid-area: winner;
+    justify-self: center;
+    background: #C3F4B1;
+    padding: 0.4em 0.8em;
+    color: var(--clr-ter);
+    border-radius: 4px;
+}
+.user div.inActive {
+    opacity: 0;
+}
+.user * {
+    align-self: center;
+    line-height: 1.8;
+}

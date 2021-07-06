@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Count</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-file-alt"></i>
+      <h1>Page Count</h1>
+    </header>
+    <div class="container">
+      <div class="dateContainer">
+        <div class="prev"><i class="fas fa-arrow-left"></i></div>
+        <div class="date">5 JULY 2021</div>
+        <div class="next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+      <div class="userContainer">
+        <div class="user1 user">
+          <h2>Pranay Raj</h2>
+          <p class="count countUser1">0</p>
+          <i class="fas fa-plus-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+          <div class="currentWinner first">Current Winner</div>
+        </div>
+        <div class="user2 user">
+          <h2>Ishan Narayan</h2>
+          <p class="count countUser2">0</p>
+          <i class="fas fa-plus-circle"></i>
+          <i class="fas fa-minus-circle"></i>
+          <div class="currentWinner second">Current Winner</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
