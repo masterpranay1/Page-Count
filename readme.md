@@ -4,7 +4,8 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-This is advanced and productive counter application. 🟠🟡🟢
+This is advanced and productive counter application.
+Click Here [Live Link](https://masterpranay1.github.io/Page-Count/Index.html)
 
 - [Overview](#overview)
 - [Screenshots](#screenshots)
