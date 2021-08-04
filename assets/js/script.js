@@ -13,16 +13,15 @@ const winner = document.querySelectorAll(".currentWinner");
 
 /* firebase config */
 var firebaseConfig = {
-  apiKey: "AIzaSyB_cKB4FsUaI5BeRMp0C5HtFa1P2OMYqks",
-  authDomain: "page-count-7d901.firebaseapp.com",
-  projectId: "page-count-7d901",
-  storageBucket: "page-count-7d901.appspot.com",
-  messagingSenderId: "605505235627",
-  appId: "1:605505235627:web:6902c52831032b60e2e5ee",
-  measurementId: "G-KC1MSS5Y2C",
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyCmew6HGFLMcYkaHm73AcG2dU2xUWKtr7U",
+    authDomain: "page-count-2.firebaseapp.com",
+    projectId: "page-count-2",
+    storageBucket: "page-count-2.appspot.com",
+    messagingSenderId: "404728001217",
+    appId: "1:404728001217:web:cb08645343836e63a99a40"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
 
 var d = new Date();
