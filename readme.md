@@ -6,6 +6,7 @@
 
 This is advanced and productive counter application.
 Click Here [Live Link](https://masterpranay1.github.io/Page-Count/Index.html)
+
 { FIREBASE STORING FUNCTIONS MIGHT NOT WORK because i was exploring the firebase so i used firebase with no authentication which is expire after 30 days. }
 
 - [Overview](#overview)
